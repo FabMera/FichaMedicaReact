@@ -1,0 +1,84 @@
+{
+  "regiones": [
+    {
+      "region": "Arica y Parinacota",
+
+      "id": 1
+    },
+    {
+      "region": "Tarapacá",
+
+      "id": 2
+    },
+    {
+      "region": "Antofagasta",
+
+      "id": 3
+    },
+    {
+      "region": "Atacama",
+
+      "id": 4
+    },
+    {
+      "region": "Coquimbo",
+
+      "id": 5
+    },
+    {
+      "region": "Valparaíso",
+
+      "id": 6
+    },
+    {
+      "region": "Región del Libertador Gral. Bernardo O’Higgins",
+
+      "id": 7
+    },
+    {
+      "region": "Región del Maule",
+
+      "id": 8
+    },
+    {
+      "region": "Región de Ñuble",
+
+      "id": 9
+    },
+    {
+      "region": "Región del Biobío",
+
+      "id": 10
+    },
+    {
+      "region": "Región de la Araucanía",
+
+      "id": 11
+    },
+    {
+      "region": "Región de Los Ríos",
+
+      "id": 12
+    },
+    {
+      "region": "Región de Los Lagos",
+
+      "id": 13
+    },
+    {
+      "region": "Región Aisén del Gral. Carlos Ibáñez del Campo",
+
+      "id": 14
+    },
+    {
+      "region": "Región de Magallanes y de la Antártica Chilena",
+
+      "id": 15
+    },
+    {
+      "region": "Región Metropolitana de Santiago",
+
+      "id": 16
+    }
+  ]
+}
