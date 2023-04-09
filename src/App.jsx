@@ -1,26 +1,32 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import Home from "./pages/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Principal from "./pages/Principal";
-import axios from "axios";
+import NotFound from "./pages/NotFound";
+import MiContext from "./Context/MiContext";
 
 const App = () => {
-  const endPointRegiones = "/Reg.json";
-
-  const [regiones, setRegiones] = useState([]);
-
-  const dataRegiones = async () => {
-    const response = await axios.get(endPointRegiones);
-    const info = response.data.regiones;
-    setRegiones(info);
-  };
-
+  const [pacientes, setPacientes] = useState([]);
   useEffect(() => {
-    dataRegiones();
+    const obtenerPacientes =
+      JSON.parse(localStorage.getItem("pacientes")) ?? [];
+    setPacientes(obtenerPacientes);
   }, []);
-
+  useEffect(() => {
+    localStorage.setItem("pacientes", JSON.stringify(pacientes));
+  }, [pacientes]);
   return (
-    <div className="container">
-      <Principal regiones={regiones} />
-    </div>
+    <>
+      <MiContext.Provider value={{ pacientes, setPacientes }}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="principal" element={<Principal />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </MiContext.Provider>
+    </>
   );
 };
 
