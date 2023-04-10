@@ -22,8 +22,9 @@ const Home = () => {
       ) {
         return paciente;
       }
+      setCargando(true);
     });
-    setCargando(true);
+
     setTimeout(() => {
       setBusqueda(resultado);
       setCargando(false);

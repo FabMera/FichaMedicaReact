@@ -1,6 +1,10 @@
 import React from "react";
 
 const ResultadoApellido = ({ paciente }) => {
+
+    const clickModal = () => {
+        window.confirm("Desea Sobreescribir los datos del paciente?")
+    }
   return (
     <>
       <div className="container">
@@ -12,7 +16,7 @@ const ResultadoApellido = ({ paciente }) => {
           <p className="">Rut :{paciente.rut}</p>
           <p className="">Email de Contacto:{paciente.email}</p>
 
-          <div className="d-flex justify-content-between"></div>
+          <div className="d-flex justify-content-between"><button onClick={clickModal} className="btn btn-success">Actualizar</button></div>
         </div>
       </div>
     </>
