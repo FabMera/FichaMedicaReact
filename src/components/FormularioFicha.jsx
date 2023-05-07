@@ -270,20 +270,20 @@ const FormularioFicha = ({ regiones }) => {
         <Error> *El campo comentarios debe tener maximo 30 caracteres</Error>
       )}
       <div className="mb-2 text-center">
-        <button type="submit" className="btn btn-primary m-2">
+        <button type="submit" className="btn btn-primary m-2 col-12 col-md-6">
           Guardar
         </button>
         <button
           onClick={() => cleanInfo()}
           type="button"
-          className="btn btn-success m-2"
+          className="btn btn-success m-2 col-12 col-md-6"
         >
           Limpiar
         </button>
         <button
           onClick={() => navigate("/")}
           type="button"
-          className="btn btn-danger m-2"
+          className="btn btn-danger m-2 col-12 col-md-6"
         >
           Salir
         </button>
