@@ -35,7 +35,7 @@ const Home = () => {
   return (
     <>
       <div className="container bg-info shadow mt-5 rounded">
-        <h1 className="text-center text-white p-4">Fichas de Pacientes</h1>
+        <h1 className="text-center text-white p-4">Fichas de Pacientes Nuevos</h1>
         <div className="row justify-content-center ">
           <div className="col-12 col-md-4 m-3">
             <button
